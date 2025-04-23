@@ -511,7 +511,7 @@ p {
 }
 
 .backdrop:not(.is-open) .modal {
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -50%) scale(1.5);
 }
 
 .btn-close {
@@ -571,10 +571,13 @@ label textarea {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;    
-    margin-bottom: 4px;
 }
 
-.main-form-input:focus-within {  
+.main-input{
+    margin-top: 4px;
+}
+
+form:focus-within {  
     border-color: #4d5ae5;  
 } /*не працює*/ 
 
@@ -610,7 +613,7 @@ textarea {
     display: flex;
 }
 
-.main-form.btn{
+.form.btn{
     align-self: center;
     padding: 16px 66px 16px 66px;
 }
