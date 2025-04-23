@@ -577,7 +577,7 @@ label textarea {
     margin-top: 4px;
 }
 
-form:focus-within {  
+.main-input-text:focus-within {  
     border-color: #4d5ae5;  
 } /*не працює*/ 
 
