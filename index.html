@@ -370,5 +370,28 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button class="btn-close" type="button">
+                <svg width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form class="main-form">
+                <label><p class="main-input-text">Name</p><input type="text" name="username" autofocus/></label>
+                <label><p class="main-input-text">Phone</p><input type="tel" name="phone" /></label>
+                <label><p class="main-input-text">Email</p><input type="email" name="email" /></label>                
+                <label><p class="main-input-text">Comment</p><textarea class="main-input-text" name="comment" rows="7" cols="" placeholder="Text input"></textarea></label>
+                <div class="checkbox-cont">
+                    <label><input class="checkbox" type="checkbox" name="check" value="accept" />  </label>
+                    <p class="accept-text">I accept the terms and conditions of the <a href="/" class="accept-link">Privacy Policy</a></p>
+                </div>
+                <button class="main-form btn" type="submit">Send</button>
+            </form>
+              
+        </div>
+    </div>
 </body>
 </html>
