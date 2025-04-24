@@ -388,32 +388,40 @@
     <div class="backdrop is-open">
         <div class="modal">
             <button class="btn-close" type="button">
-                <svg width="8" height="8">
+                <svg class="btn-close-svg" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
             <p class="modal-text">Leave your contacts and we will call you back</p>
             <form class="main-form">
-                <label for="input-name">Name</label>
-                <div class="input-wrap">
-                    <input class="input-cont" type="text" name="username" id="input-name" autofocus>
-                    <svg width="12" height="12">
-                        <use href="./images/icons.svg#icon-name"></use>
-                    </svg>
+                <div class="main-form-label-cont">
+                    <label class="main-form-label" for="user-name">Name</label>
+                    <div class="input-wrap">
+                        <input class="input-cont" type="text" name="use-rname" id="user-name" autofocus>
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-name"></use>
+                        </svg>
+                    </div>
+                </div>                
+                
+                <div class="main-form-label-cont">
+                    <label class="main-form-label" for="input-tel">Phone</label>
+                    <div class="input-wrap">
+                        <input class="input-cont" type="tel" name="phone" id="input-tel">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
                 </div>
-                <label for="input-tel">Phone</label>
-                <div class="input-wrap">
-                    <input class="input-cont" type="tel" name="phone" id="input-tel">
-                    <svg width="13" height="13">
-                        <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
-                </div>
-                <label for="input-email">Email</label>      
-                <div class="input-wrap">
-                    <input class="input-cont" type="email" name="email" id="input-email">
-                    <svg width="15" height="12">
-                        <use href="./images/icons.svg#icon-email"></use>
-                    </svg>
+
+                <div class="main-form-label-cont">
+                    <label class="main-form-label" for="input-email">Email</label>
+                    <div class="input-wrap">
+                        <input class="input-cont" type="email" name="email" id="input-email">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
                 </div>
                 <label for="input-text">Comment</label>
                 <textarea id="input-text" name="comment" rows="7" placeholder="Text input"></textarea>
