@@ -409,12 +409,12 @@ p {
 .footer-container {
     display: flex;
     align-items: baseline;
-    padding-left: 156px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-logo-container {
     margin-right: 120px;
-    /* margin-left: 156px; */
 }
 
 .footer-text {
@@ -434,7 +434,12 @@ p {
     margin-bottom: 16px;
 }
 
-.footer-text-socials {
+.soc-cont {
+    margin-right: 80px;
+}
+
+.footer-text-socials,
+.footer-subscribe-lable {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -449,7 +454,6 @@ p {
 .socials-list.footer {
     gap: 16px;
     padding: 0;
-
 }
 
 .socials-link-foot {
@@ -470,18 +474,50 @@ p {
     background-color: #31d0aa;
 }
 
-.soc-cont {
-    margin-right: 120px;
+.footer-subscribe {
+    position: relative;
+}
+
+.subscribe-form input {
+    width: 264px;
+    height: 40px;
+    margin-right: 24px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding: 8px 212px 8px 16px;
+    color: #fff;
+}
+
+.subscribe-form input::placeholder {
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.btn.subscribe {
+    width: 165px;
+    height: 40px;
+    padding-right: 64px;
+    padding-left: 24px;
+
+}
+
+.subscribe-form svg {
+    position: absolute;
+    top: 60px;
+    left: 410px;
+    transform: translateY(-50%);
 }
 
 .backdrop {
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     background-color: rgba(46, 47, 66, 0.4);
     opacity: 0;
     visibility: hidden;
@@ -490,11 +526,11 @@ p {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-open {
+/* .backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-}
+} */
 
 .modal {
     position: absolute;
@@ -540,7 +576,7 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 16px;
 }
