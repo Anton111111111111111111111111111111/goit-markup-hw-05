@@ -608,6 +608,7 @@ p {
 
 .main-form-label-cont {
     margin-bottom: 8px;
+    width: 360px;
 }
   
 .main-form-label {
@@ -668,6 +669,7 @@ p {
 
 .comment-cont {
     margin-bottom: 16px;
+    width: 360px;
 }
 
 textarea::placeholder {
@@ -698,6 +700,7 @@ textarea::placeholder {
 }
 
 .checkbox-cont {
+    width: 360px;
     margin-bottom: 24px; 
     position: relative;
 }
