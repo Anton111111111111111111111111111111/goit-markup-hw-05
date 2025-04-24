@@ -513,14 +513,13 @@ p {
 .submit-svg {
     margin-left: 16px;
     position: absolute;
+    top: 10px;
+    right: 24px;
 }
-
+/* 
 .subscribe-form svg {
-    position: absolute;
-    top: 50%;
-    left: 117px;
     transform: translateY(-50%);
-}
+} */
 
 .backdrop {
     position: fixed;
