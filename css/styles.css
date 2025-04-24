@@ -480,10 +480,6 @@ p {
     gap: 24px;
 }
 
-/* .submit-cont {
-    position: relative;
-  } */
-
 .footer-subscribe-input {
     width: 264px;
     height: 40px;
@@ -507,14 +503,16 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     padding-right: 64px;
     padding-left: 24px;
+    position: relative;
 }
 
 .submit-svg {
     margin-left: 16px;
+    position: absolute;
 }
 
 .subscribe-form svg {
