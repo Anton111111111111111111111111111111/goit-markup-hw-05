@@ -380,7 +380,13 @@
             </button>
             <p class="modal-text">Leave your contacts and we will call you back</p>
             <form class="main-form">
-                <label class="main-input-text">Name<input class="main-input" type="text" name="username" autofocus/></label>
+                <label for="input-name" class="main-input-text">Name</label>
+                <div class="input-wrap">
+                    <input class="main-input" type="text" name="username" id="input-name" autofocus/>
+                    <svg width="32" height="32">
+                        <use class="icon" href="/icons.svg#icon-name"></use>
+                    </svg>
+                </div>
                 <label class="main-input-text">Phone<input class="main-input" type="tel" name="phone" /></label>
                 <label class="main-input-text">Email<input class="main-input" type="email" name="email" /></label>                
                 <label class="main-input-text">Comment<textarea class="main-input" name="comment" rows="7" cols="" placeholder="Text input"></textarea></label>

@@ -564,6 +564,29 @@ label textarea {
     gap: 8px;
     align-items: flex-start;
 }
+ 
+.input-wrap {
+    position: relative;
+}
+  
+.main-form svg {
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    fill: #2E2F42;
+  }
+
+  .main-form input {
+    border: none;
+    width: 300px;
+    height: 40px;
+    border: 1px solid grey;
+    padding-left: 42px;
+    border-radius: 4px;
+    outline: none;
+  }
 
 .main-input-text{
     font-family: "Roboto", sans-serif;
@@ -572,14 +595,23 @@ label textarea {
     letter-spacing: 0.04em;
     color: #8e8f99;    
 }
-
+/* 
 .main-input{
     margin-top: 4px;
-}
+} */
 
-.main-input:focus-within {  
-    border-color: #4d5ae5;  
-} /*не працює*/ 
+  
+.main-form input:focus {
+    border: 1px solid #4d5ae5;
+  }
+  
+  .main-form input:focus + svg {
+    fill: #4d5ae5;
+  }
+  
+  .main-form input:focus::placeholder {
+    color: #4d5ae5;
+  }
 
 input::placeholder {
     color: rgba(46, 47, 66, 0.4);
