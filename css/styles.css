@@ -473,10 +473,19 @@ p {
 .socials-link-foot:focus  {
     background-color: #31d0aa;
 }
-
+/* 
 .footer-subscribe {
     position: relative;
+} */
+
+.subscribe-form {
+    display: flex;
+    align-items: flex-end;
 }
+
+.submit-cont {
+    position: relative;
+  }
 
 .subscribe-form input {
     width: 264px;
@@ -507,8 +516,8 @@ p {
 
 .subscribe-form svg {
     position: absolute;
-    top: 60px;
-    left: 410px;
+    top: 50%;
+    left: 117px;
     transform: translateY(-50%);
 }
 
