@@ -423,12 +423,15 @@
                         </svg>
                     </div>
                 </div>
-                <label for="input-text">Comment</label>
-                <textarea id="input-text" name="comment" rows="7" placeholder="Text input"></textarea>
-                                
+
+                <div class="comment-cont">
+                    <label class="main-form-label" for="user-comment">Comment</label>
+                    <textarea class="user-comment" id="user-comment" name="user-comment" rows="7" placeholder="Text input"></textarea>
+                </div>
+                
                 <div class="checkbox-cont">
-                    <label><input class="checkbox" type="checkbox" name="check" value="accept"></label>
-                    <p class="accept-text">I accept the terms and conditions of the <a href="/" class="accept-link">Privacy Policy</a></p>
+                    <input class="checkbox" visually-hidden type="checkbox" name="user-privacy" value="true" id="user-privacy">
+                    <label class="checkbox-label" for="user-privacy">I accept the terms and conditions of the <span class="accept-span"></span><a href="/" class="accept-link">Privacy Policy</a></label>
                 </div>
                 <button class="form btn" type="submit">Send</button>
             </form>
