@@ -625,7 +625,7 @@ p {
     position: relative;
 }
   
-.main-form svg {
+.main-form .input-icon {
     position: absolute;
     top: 50%;
     left: 16px;
@@ -707,18 +707,14 @@ textarea::placeholder {
 
 .checkbox-icon {
     position: absolute;
-    top: 0;
+    top: 4px;
     left: 0;
+    width: 16px;
+    height: 16px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .checkbox-label .accept-span{
-    background-color: #404bbf;
-    border: none;
-    fill: #f4f4fd;
-}
-
-.checkbox-icon:checked {
+.checkbox:checked + .checkbox-label .accept-span .checkbox-icon{
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -746,6 +742,8 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 .accept-link {
